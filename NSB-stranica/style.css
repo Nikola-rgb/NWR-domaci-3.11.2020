@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Saira+Stencil+One&display=swap");
+@keyframes social {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/**********
+Basic styles
+**********/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.bg-dark {
+  background: transparent !important;
+}
+
+.bg-dark.scrolled {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), black) !important;
+}
+
+/*Navigacija*/
+.navbar .navbar-brand {
+  font-family: "Saira Stencil One", cursive;
+  font-size: 1.5rem;
+  text-shadow: 2px -2px #024e95 !important;
+  color: #fff;
+}
+.navbar .navbar-brand:hover {
+  color: #ffc107 !important;
+  transition: 0.5s ease;
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+  .navbar .navbar-nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), black) !important;
+    text-align: center;
+  }
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #fff !important;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ffc107 !important;
+  transition: 0.5s ease;
+}
+
+/*Header*/
+.headers {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  background-image: url(img/Header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+  .headers {
+    display: flex;
+    align-items: flex-end;
+    background-image: url(img/kol1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+  .headers .container-fluid {
+    padding-bottom: 50px;
+  }
+}
+.headers .container-fluid .card {
+  background: linear-gradient(90deg, black, transparent 100%, transparent);
+}
+.headers .container-fluid .card .card-body .card-title {
+  font-family: "Saira Stencil One", cursive;
+  font-size: 1.8rem;
+  text-shadow: 2px -2px #024e95;
+}
+.headers .container-fluid .card .card-body .card-link {
+  border: 2px solid #ffc107;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.headers .container-fluid .card .card-body .card-link:hover {
+  color: #ffc107 !important;
+  border: 2px solid #fff;
+  transition: 0.5s ease;
+}
+
+/*Video*/
+.video {
+  background-image: url(img/slika8.png);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: auto;
+}
+
+/*Footer*/
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #000001);
+}
+
+/*Footer*/
+.col-md-4 h3 {
+  font-family: "Saira Stencil One", cursive;
+}
+.col-md-4 .broj {
+  margin-left: 100px;
+}
+
+.social .fab:hover {
+  animation: social 0.7s ease;
+  color: #ffc107;
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+  .social .fab {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Saira+Stencil+One&display=swap');
+
+$font: 'Oswald', sans-serif;
+$font-logo:  'Saira Stencil One', cursive;
+$size: 16px;
+$white: #fff;
+$black: #000;
+$yellow: #ffc107;
+$blue: #024e95;
+$transition: .5s ease;
+
+
+
+@keyframes social{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/**********
+Basic styles
+**********/
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $font;
+    font-size: $size;
+    line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+a{
+    text-decoration: none !important;
+}
+.bg-dark{
+    background: transparent !important;
+}
+.bg-dark.scrolled{
+    background: linear-gradient(rgba( 0,0,0,.4), rgba(0,0,0.4)) !important;
+}
+
+
+/*Navigacija*/
+
+.navbar{
+    .navbar-brand{
+        font-family: $font-logo;
+        font-size: 1.5rem;
+        text-shadow: 2px -2px $blue !important;
+        color: $white;
+        &:hover{
+            color: $yellow !important;
+            transition: $transition;
+            }
+    }
+    .navbar-nav{
+          @media(min-width: 375px) and (max-width: 1024px){
+               background: linear-gradient(rgba( 0,0,0,.4), rgba(0,0,0.4)) !important;
+               text-align: center;
+    }
+     .nav-item{
+            .nav-link{
+                color: $white !important;
+                &:hover{
+                    color: $yellow !important;
+                    transition: $transition;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*Header*/
+
+.headers{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-image: url(img/Header.jpg);
+    background-size: cover;
+    background-position: center;
+     @media(min-width: 375px) and (max-width: 1024px){
+                 display: flex;
+                 align-items: flex-end;
+                   background-image: url(img/kol1.jpg);
+                    background-size: cover;
+                     background-position: center;
+                 
+            }
+    .container-fluid{
+        @media(min-width: 375px) and (max-width: 1024px){
+            padding-bottom: 50px;
+        }
+        .card{
+            background: linear-gradient(90deg, black, transparent 100%, transparent);
+           
+            .card-body{
+                .card-title{
+                    font-family: $font-logo;
+                    font-size: 1.8rem;
+                    text-shadow: 2px -2px $blue;
+                }
+                .card-link{
+                     border: 2px solid $yellow;
+                     padding: 5px 20px;
+                     border-radius: 10px;
+                    text-align: center;
+                       &:hover{
+                         color: $yellow !important;
+                         border: 2px solid $white;
+                         transition: $transition;
+                }
+                }
+            }
+        }
+    }
+    
+}
+
+/*Video*/
+
+.video{
+    background-image: url(img/slika8.png);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    }
+/*Footer*/
+
+.footer{ 
+    background: linear-gradient(rgba( 0,0,0,.5), rgba(0,0,0.99));
+}
+
+/*Footer*/
+
+.col-md-4{
+    h3{
+        font-family: $font-logo;
+    }
+    .broj{
+       margin-left: 100px;
+    }
+}
+   .social{
+       
+        .fab{
+             &:hover{
+            animation: social .7s ease;
+            color: $yellow;
+        }
+            @media(min-width: 375px) and (max-width: 1024px){
+                font-size: 1.5rem;
+            }
+        }
+    }
+
